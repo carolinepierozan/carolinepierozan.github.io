@@ -119,11 +119,22 @@
     const mascotButton = document.querySelector('.mascot-sticker');
     if (mascotButton) {
       mascotButton.addEventListener('click', () => {
+        // Desktop reveals it only while hovered or keyboard-focused; tap toggles it on touchscreens.
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+          mascotButton.setAttribute('aria-pressed', 'false');
+          return;
+        }
         const showingSketch = mascotButton.getAttribute('aria-pressed') !== 'true';
         mascotButton.setAttribute('aria-pressed', String(showingSketch));
         mascotButton.setAttribute('aria-label', showingSketch
           ? 'Show the finished designer cat logo'
           : 'See Caroline’s original hand-drawn designer cat sketch');
+      });
+      document.addEventListener('pointerdown', event => {
+        if (!mascotButton.contains(event.target)) {
+          mascotButton.setAttribute('aria-pressed', 'false');
+          mascotButton.setAttribute('aria-label', 'See Caroline’s original hand-drawn designer cat sketch');
+        }
       });
       mascotButton.addEventListener('keydown', event => {
         if (event.key === 'Escape' && mascotButton.getAttribute('aria-pressed') === 'true') {
