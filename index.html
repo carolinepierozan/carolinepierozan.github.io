@@ -9,13 +9,26 @@
   <meta property="og:title" content="Caroline Pierozan — Product Designer & UX Researcher">
   <meta property="og:description" content="Curiosity, care & a little magic. Selected product design and UX research work.">
   <title>Caroline Pierozan · Product Designer & UX Researcher</title>
-  <link rel="icon" href="assets/gatinho-designer.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/gatinho-designer.svg?v=4" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT,WONK@9..144,400,70,1;9..144,500,70,1;9..144,600,70,1;9..144,700,70,1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script src="content.js?v=3" defer></script>
-  <script src="script.js?v=3" defer></script>
+  <script src="script.js?v=4" defer></script>
+
+  <style id="mascot-hover-fix">
+  /* Critical mascot styles live with the HTML so an old cached CSS file cannot reveal both logos. */
+  .hero-art .mascot-sticker{position:absolute;display:block;width:214px;height:214px;aspect-ratio:1;box-sizing:border-box;padding:0;margin:0;border:0;border-radius:50%;background:transparent;cursor:pointer;overflow:visible;appearance:none}
+  .hero-art .mascot-sticker>img{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;max-width:none;object-fit:contain;transition:opacity .25s ease}
+  .hero-art .mascot-sticker>img.mascot-finished{opacity:1!important;z-index:2}
+  .hero-art .mascot-sticker>img.mascot-sketch{opacity:0!important;z-index:1;pointer-events:none}
+  .hero-art .mascot-sticker:is(:hover,:focus-visible,[aria-pressed="true"])>img.mascot-finished{opacity:0!important}
+  .hero-art .mascot-sticker:is(:hover,:focus-visible,[aria-pressed="true"])>img.mascot-sketch{opacity:1!important}
+  .hero-art .mascot-sticker:focus-visible{outline:3px solid #8656aa;outline-offset:5px}
+  @media(max-width:620px){.hero-art .mascot-sticker{width:198px;height:198px}}
+  @media(prefers-reduced-motion:reduce){.hero-art .mascot-sticker>img{transition:none}}
+  </style>
 </head>
 <body>
 <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -23,7 +36,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="wordmark" href="#top" aria-label="Caroline Pierozan — homepage">
-        <span class="brand-icon" aria-hidden="true"><img src="assets/gatinho-designer.svg" width="42" height="42" alt=""></span>
+        <span class="brand-icon" aria-hidden="true"><img src="assets/gatinho-designer.svg?v=4" width="42" height="42" alt=""></span>
         <span>caroline<span class="wordmark-dot">.</span></span>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
@@ -57,8 +70,8 @@
         <div class="art-paper paper-back"><span class="paper-squiggle">♡</span><span class="art-paper-label">research notes <span>✿</span></span><span class="paper-lines"></span></div>
         <div class="art-paper paper-main"><div class="art-paper-top"><span class="dots"><b></b><b></b><b></b></span><span>little things matter ✦</span></div><div class="art-main-content"><div class="art-round-icon">✿</div><div class="art-main-heading">thoughtful<br>by design<span>.</span></div><div class="art-main-pills"><span>✧ empathy</span><span>♡ curiosity</span></div></div><div class="art-paper-bottom"><span>01 / explore</span><span>↗</span></div></div>
         <button class="art-sticker sticker-blue mascot-sticker" type="button" aria-pressed="false" aria-label="See Caroline’s original hand-drawn designer cat sketch" title="Hover or tap to see the original sketch">
-          <img class="mascot-finished" src="assets/gatinho-designer.svg" width="220" height="220" alt="" aria-hidden="true">
-          <img class="mascot-sketch" src="assets/gatinho-rascunho-original.svg" width="220" height="220" alt="" aria-hidden="true" loading="lazy">
+          <img class="mascot-finished" src="assets/gatinho-designer.svg?v=4" width="220" height="220" alt="" aria-hidden="true">
+          <img class="mascot-sketch" src="assets/gatinho-rascunho-original.svg?v=4" width="220" height="220" alt="" aria-hidden="true" loading="lazy">
           <span class="mascot-hint" aria-hidden="true">from my sketchbook ✎</span>
         </button>
         <div class="art-badge sticker-heart"><span>made with</span><strong>♡</strong><span>care</span></div>
@@ -83,7 +96,7 @@
 
     <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title"><div class="wrap"><div class="contact-panel reveal"><div class="contact-star star-left" aria-hidden="true">✷</div><div class="contact-star star-right" aria-hidden="true">✳</div><div class="contact-tag">♡ <span data-i18n="contactKicker">the next chapter</span></div><h2 id="contact-title" data-i18n="contactTitle">Let's make something <em>lovely</em> together.</h2><p data-i18n="contactDesc">Whether it's a tricky product problem or a thoughtful idea, I'd love to hear about it.</p><div class="contact-actions" id="contactActions"><a class="button button-dark" href="https://carolinepierozan.notion.site/Caroline-s-Private-Portfolio-050c1d70624149b7b446dc70efcaa0da" target="_blank" rel="noopener noreferrer"><span data-i18n="getInTouch">Visit my portfolio</span><span aria-hidden="true">↗</span></a></div><span class="contact-signature">made with care, always ✿</span></div></div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-inner"><a class="wordmark" href="#top"><span class="brand-icon small-brand" aria-hidden="true"><img src="assets/gatinho-designer.svg" width="32" height="32" loading="lazy" alt=""></span><span>caroline<span class="wordmark-dot">.</span></span></a><p>© <span id="year"></span> Caroline Pierozan <span class="footer-dot">✳</span> <span data-i18n="footer">Made with curiosity & care.</span></p><a href="#top" class="back-top"><span data-i18n="backTop">Back to top</span><span aria-hidden="true">↑</span></a></div></footer>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="wordmark" href="#top"><span class="brand-icon small-brand" aria-hidden="true"><img src="assets/gatinho-designer.svg?v=4" width="32" height="32" loading="lazy" alt=""></span><span>caroline<span class="wordmark-dot">.</span></span></a><p>© <span id="year"></span> Caroline Pierozan <span class="footer-dot">✳</span> <span data-i18n="footer">Made with curiosity & care.</span></p><a href="#top" class="back-top"><span data-i18n="backTop">Back to top</span><span aria-hidden="true">↑</span></a></div></footer>
 </div>
 
 <div class="case-overlay" id="caseOverlay" hidden><div class="case-backdrop" data-close="true"></div><section class="case-panel" id="casePanel" role="dialog" aria-modal="true" aria-labelledby="caseTitle" tabindex="-1"><div class="case-panel-header"><button class="case-back" type="button" data-close="true"><span aria-hidden="true">←</span><span data-i18n="backToWork">Back to work</span></button><button class="case-close" type="button" data-close="true" aria-label="Close case study">✕</button></div><div id="caseContent"></div></section></div>
