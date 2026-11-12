@@ -70,6 +70,11 @@
     .hero-art .mascot-sticker.mascot-magic-burst .mascot-sparkle{animation:none!important}
   }
 
+
+  /* Only swap the label text on hover/tap; preserve the existing magic effect. */
+  .hero-art .mascot-secret-hint .mascot-hint-reveal{display:none}
+  .hero-art .mascot-sticker:is(:hover,:focus-visible,[aria-pressed="true"]) .mascot-hint-default{display:none}
+  .hero-art .mascot-sticker:is(:hover,:focus-visible,[aria-pressed="true"]) .mascot-hint-reveal{display:inline}
   </style>
 </head>
 <body>
@@ -114,7 +119,7 @@
         <button class="art-sticker sticker-blue mascot-sticker" type="button" aria-pressed="false" aria-label="See Caroline’s original hand-drawn designer cat sketch" title="Hover or tap to see the original sketch">
           <img class="mascot-finished" src="assets/gatinho-designer.svg?v=4" width="220" height="220" alt="" aria-hidden="true">
           <img class="mascot-sketch" src="assets/gatinho-rascunho-original.svg?v=4" width="220" height="220" alt="" aria-hidden="true" loading="lazy">
-          <span class="mascot-secret-hint" aria-hidden="true">✦ little secret</span>
+          <span class="mascot-secret-hint" aria-hidden="true"><span class="mascot-hint-default">✦ little secret</span><span class="mascot-hint-reveal">from my sketchbook ✎</span></span>
           <span class="mascot-glimmer-ring" aria-hidden="true"></span>
           <span class="mascot-sparkle sparkle-one" aria-hidden="true">✦</span>
           <span class="mascot-sparkle sparkle-two" aria-hidden="true">✧</span>
