@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://carolinepierozan.github.io/sitemap.xml

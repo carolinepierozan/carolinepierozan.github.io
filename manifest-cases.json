@@ -1,0 +1,189 @@
+[
+  {
+    "id": "agent-accessibility",
+    "title": "Platform Redesign for Accessibility & Usability — Agent",
+    "label": "Zenvia · Agent platform",
+    "short": "Zenvia Live Chat · Agent",
+    "tags": [
+      "Product Design",
+      "UX Research",
+      "Accessibility"
+    ],
+    "type": [
+      "product",
+      "research",
+      "accessibility"
+    ],
+    "preview": "01.02_Painel_de_atendimento_agente_-_todas_as_mtricas 1.png",
+    "cover": "../media/41-92f957.webp",
+    "image_count": 16,
+    "body_length": 10120
+  },
+  {
+    "id": "admin-dashboard",
+    "title": "Dashboard Redesign for Accessibility & Usability — Admin",
+    "label": "Zenvia · Admin dashboard",
+    "short": "Zenvia · Admin Dashboard",
+    "tags": [
+      "Product Design",
+      "UX Research",
+      "Accessibility"
+    ],
+    "type": [
+      "product",
+      "research",
+      "accessibility"
+    ],
+    "preview": "Dashboard_-_Atendimentos 1.png",
+    "cover": "../media/25-ca7d1a.webp",
+    "image_count": 4,
+    "body_length": 9279
+  },
+  {
+    "id": "ai-productivity",
+    "title": "AI for Productivity",
+    "label": "Zenvia · AI proof of concept",
+    "short": "AI for Productivity",
+    "tags": [
+      "AI & UX",
+      "Product Design",
+      "UX Research"
+    ],
+    "type": [
+      "product",
+      "research"
+    ],
+    "preview": "Resumo_de_conversa 1.png",
+    "cover": "../media/14-48aee2.webp",
+    "image_count": 15,
+    "body_length": 6354
+  },
+  {
+    "id": "product-analytics",
+    "title": "Product Analytics & Feature Adoption",
+    "label": "Zenvia · Continuous improvement",
+    "short": "Product Analytics & Feature Adoption",
+    "tags": [
+      "Product Analytics",
+      "UX Research",
+      "FullStory"
+    ],
+    "type": [
+      "research"
+    ],
+    "preview": "image 13.png",
+    "cover": "../media/17-f752c9.webp",
+    "image_count": 5,
+    "body_length": 6520
+  },
+  {
+    "id": "wms-port",
+    "title": "WMS Port Web App",
+    "label": "Portonave · Logistics",
+    "short": "Portonave WMS",
+    "tags": [
+      "Product Design",
+      "Logistics",
+      "Tablet"
+    ],
+    "type": [
+      "product"
+    ],
+    "preview": "Home_programao.png",
+    "cover": "../media/71-2ef169.webp",
+    "image_count": 6,
+    "body_length": 5525
+  },
+  {
+    "id": "allfly-checkout",
+    "title": "Flight Selection and Checkout",
+    "label": "AllFly · Travel booking",
+    "short": "AllFly · Flight & Checkout",
+    "tags": [
+      "Product Design",
+      "E-commerce",
+      "UX Heuristics"
+    ],
+    "type": [
+      "product",
+      "research"
+    ],
+    "preview": "Flights_search_results-1.png",
+    "cover": "../media/70-ddc2c2.webp",
+    "image_count": 13,
+    "body_length": 7757
+  },
+  {
+    "id": "carbon-crm",
+    "title": "Carbon CRM",
+    "label": "Independent · Design challenge",
+    "short": "Carbon CRM",
+    "tags": [
+      "Product Design",
+      "CRM",
+      "Design Challenge"
+    ],
+    "type": [
+      "product"
+    ],
+    "preview": "02.01_Deals_kanban_page.png",
+    "cover": "../media/47-a2b16f.webp",
+    "image_count": 7,
+    "body_length": 8144
+  },
+  {
+    "id": "nexdoor",
+    "title": "Nexdoor",
+    "label": "Independent · Concept app",
+    "short": "Nexdoor",
+    "tags": [
+      "UX Research",
+      "Mobile",
+      "Concept"
+    ],
+    "type": [
+      "product",
+      "research"
+    ],
+    "preview": "Untitled_(1).png",
+    "cover": "../media/54-3c8070.webp",
+    "image_count": 3,
+    "body_length": 5673
+  },
+  {
+    "id": "research-ops",
+    "title": "Research Ops",
+    "label": "Platform Builders · Research operations",
+    "short": "Research Operations",
+    "tags": [
+      "ResearchOps",
+      "UX Research",
+      "Leadership"
+    ],
+    "type": [
+      "research"
+    ],
+    "preview": null,
+    "cover": null,
+    "image_count": 0,
+    "body_length": 2810
+  },
+  {
+    "id": "pharmacy-app",
+    "title": "Pharmacy App",
+    "label": "Retail pharmacy · UX Research",
+    "short": "Pharmacy App",
+    "tags": [
+      "UX Research",
+      "Mobile",
+      "E-commerce"
+    ],
+    "type": [
+      "research"
+    ],
+    "preview": "pexels-anna-tarazevich-5910953.jpeg",
+    "cover": "../media/56-0748c6.webp",
+    "image_count": 0,
+    "body_length": 2173
+  }
+]

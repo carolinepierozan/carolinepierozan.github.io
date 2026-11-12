@@ -37,16 +37,15 @@
     if(!container) return;
     const visible = projects.filter(project => activeFilter === 'all' || project.type.includes(activeFilter));
     if(!visible.length) { container.innerHTML = `<p>${esc(t('empty'))}</p>`; return; }
-    container.innerHTML = visible.map((project) => {
+    container.innerHTML = visible.map(project => {
       const content = project[lang];
       const num = String(projects.indexOf(project) + 1).padStart(2, '0');
       const tags = project.tags.slice(0, 3).map(tag => `<span class="tag">${esc(tag)}</span>`).join('');
-      return `<article class="project-card reveal"><button class="project-open" type="button" data-project="${esc(project.id)}" aria-label="${esc(t('projectExplore'))}: ${esc(content.title)}">${cover(project.visual)}<div class="card-bottom"><span class="card-index">${num} / 0${projects.length}</span><h3 class="card-title">${esc(content.title)}</h3><p class="card-summary">${esc(content.summary)}</p><div class="card-footer"><div class="card-tags">${tags}</div><span class="card-arrow" aria-hidden="true">↗</span></div></div></button></article>`;
+      const visual = project.cover
+        ? `<div class="project-cover cover-real cover-real-${esc(project.id)}"><span class="cover-floating-label">original project work ✿</span><img src="${esc(project.cover)}" loading="lazy" decoding="async" alt="${esc(content.title)} — original project image"></div>`
+        : cover(project.visual);
+      return `<article class="project-card reveal"><a class="project-open" href="cases/${esc(project.id)}/" aria-label="${esc(t('projectExplore'))}: ${esc(content.title)}">${visual}<div class="card-bottom"><span class="card-index">${num} / ${String(projects.length).padStart(2,'0')}</span><h3 class="card-title">${esc(content.title)}</h3><p class="card-summary">${esc(content.summary)}</p><div class="card-footer"><div class="card-tags">${tags}</div><span class="card-arrow" aria-hidden="true">↗</span></div></div></a></article>`;
     }).join('');
-    $$('[data-project]', container).forEach(button => button.addEventListener('click', () => {
-      lastFocused = button;
-      window.location.hash = `project/${button.dataset.project}`;
-    }));
     if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       $$('.project-card', container).forEach(el => el.classList.add('in-view'));
     } else refreshReveal();
