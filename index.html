@@ -13,9 +13,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT,WONK@9..144,400,70,1;9..144,500,70,1;9..144,600,70,1;9..144,700,70,1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
   <script src="content.js?v=3" defer></script>
-  <script src="script.js?v=4" defer></script>
+  <script src="script.js?v=6" defer></script>
 
   <style id="mascot-hover-fix">
   /* Critical mascot styles live with the HTML so an old cached CSS file cannot reveal both logos. */
@@ -28,6 +28,48 @@
   .hero-art .mascot-sticker:focus-visible{outline:3px solid #8656aa;outline-offset:5px}
   @media(max-width:620px){.hero-art .mascot-sticker{width:198px;height:198px}}
   @media(prefers-reduced-motion:reduce){.hero-art .mascot-sticker>img{transition:none}}
+  
+  /* Easter egg sparkle fallback: bundled in HTML to avoid stale stylesheet cache. */
+  .hero-art .mascot-sticker .mascot-secret-hint{
+    position:absolute;z-index:10;top:-11px;right:-13px;padding:7px 11px;
+    background:#fff7fc;color:#8c53a8;border:1px solid #deb3dc;border-radius:99px;
+    box-shadow:0 5px 14px rgba(105,65,135,.17);font-size:11px;font-weight:800;
+    white-space:nowrap;line-height:1.1;pointer-events:none;opacity:1;
+    transform:rotate(8deg);animation:egg-invite 2.8s ease-in-out infinite;
+  }
+  .hero-art .mascot-sticker .mascot-glimmer-ring{z-index:5;pointer-events:none}
+  .hero-art .mascot-sticker .mascot-sparkle{
+    position:absolute;z-index:11;pointer-events:none;opacity:0;
+    color:#fff1a1;font-size:30px;line-height:1;
+    text-shadow:0 0 4px #fff,0 0 14px #ffe1a0,0 0 24px #f1a8db;
+    transform:translate(0,0) scale(.3);filter:drop-shadow(0 0 5px #cf80c9);
+  }
+  .hero-art .mascot-sticker:is(:hover,:focus-visible,[aria-pressed="true"]).mascot-magic-burst .mascot-sparkle{
+    animation:egg-sparkle 1.22s cubic-bezier(.14,.73,.24,1) var(--delay,0ms) both;
+  }
+  .hero-art .mascot-sticker.mascot-magic-burst .mascot-glimmer-ring{
+    animation:egg-ring 1.08s ease-out both;
+  }
+  @keyframes egg-sparkle{
+    0%{opacity:0;transform:translate(0,4px) scale(.2) rotate(-15deg)}
+    22%{opacity:1;transform:translate(0,0) scale(1.55) rotate(0deg)}
+    52%{opacity:1;transform:translate(calc(var(--dx)*.45),calc(var(--dy)*.45)) scale(1.17) rotate(14deg)}
+    85%{opacity:.9;transform:translate(calc(var(--dx)*.85),calc(var(--dy)*.85)) scale(.86) rotate(24deg)}
+    100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.4) rotate(30deg)}
+  }
+  @keyframes egg-ring{
+    0%{opacity:0;transform:scale(.88)}
+    28%{opacity:1;transform:scale(1.03)}
+    75%{opacity:.72;transform:scale(1.09)}
+    100%{opacity:0;transform:scale(1.15)}
+  }
+  @keyframes egg-invite{0%,100%{transform:rotate(8deg) translateY(0)}50%{transform:rotate(8deg) translateY(-5px)}}
+  @media(prefers-reduced-motion:reduce){
+    .hero-art .mascot-sticker .mascot-secret-hint{animation:none}
+    .hero-art .mascot-sticker.mascot-magic-burst .mascot-glimmer-ring,
+    .hero-art .mascot-sticker.mascot-magic-burst .mascot-sparkle{animation:none!important}
+  }
+
   </style>
 </head>
 <body>
@@ -72,7 +114,7 @@
         <button class="art-sticker sticker-blue mascot-sticker" type="button" aria-pressed="false" aria-label="See Caroline’s original hand-drawn designer cat sketch" title="Hover or tap to see the original sketch">
           <img class="mascot-finished" src="assets/gatinho-designer.svg?v=4" width="220" height="220" alt="" aria-hidden="true">
           <img class="mascot-sketch" src="assets/gatinho-rascunho-original.svg?v=4" width="220" height="220" alt="" aria-hidden="true" loading="lazy">
-          <span class="mascot-secret-hint" aria-hidden="true">psst... ✦</span>
+          <span class="mascot-secret-hint" aria-hidden="true">✦ little secret</span>
           <span class="mascot-glimmer-ring" aria-hidden="true"></span>
           <span class="mascot-sparkle sparkle-one" aria-hidden="true">✦</span>
           <span class="mascot-sparkle sparkle-two" aria-hidden="true">✧</span>
