@@ -26,3 +26,42 @@
 /* Real project screenshots and profile picture */
 .project-open{text-decoration:none;color:inherit}.project-open:focus-visible{outline:3px solid #8e6bbe;outline-offset:-4px}.cover-real{background:linear-gradient(125deg,#f9eafa,#e7f0ff 84%);padding:34px 27px 26px}.cover-real::before{content:'✳';position:absolute;right:12px;bottom:-30px;color:#fff9;opacity:.9;font-size:170px;z-index:0}.cover-real img{display:block;position:relative;z-index:1;width:100%;height:100%;max-height:245px;object-fit:contain;filter:drop-shadow(0 12px 14px #584b6024);transition:transform .35s ease}.project-open:hover .cover-real img{transform:translateY(-4px) scale(1.015)}.cover-real .cover-floating-label{position:absolute;left:18px;top:15px;z-index:2;color:#65516d;background:#ffffffdc;border:1px solid #e5d7ee}.cover-real-admin-dashboard{background:linear-gradient(125deg,#fff0f7,#e9ddfa)}.cover-real-ai-productivity{background:linear-gradient(125deg,#edf6ff,#e9ddfc)}.cover-real-wms-port{background:linear-gradient(125deg,#eaf7ff,#ede8ff)}.cover-real-nexdoor{background:linear-gradient(125deg,#faebfa,#dfeeff)}.real-profile-photo{position:absolute;inset:13% 15%;height:74%;width:70%;border-radius:26px;object-fit:cover;object-position:center top;box-shadow:0 18px 40px #74508b24}.about-portrait .portrait-message{position:absolute;bottom:10px;right:-23px;background:#fff9;padding:6px 15px;border-radius:16px;transform:rotate(-4deg);box-shadow:0 7px 25px #5c49691b}.about-portrait .portrait-message strong{font-size:23px}.about-portrait .portrait-message span{font-size:12px}.about-portrait .portrait-flower{position:absolute;right:18px;top:9px;z-index:3}
 @media(max-width:620px){.cover-real{padding:42px 18px 17px}.cover-real img{max-height:220px}}
+
+
+/* Original sketch Easter egg on the hero mascot. Both badges share the same frame. */
+.mascot-sticker{
+  width:214px; height:auto; aspect-ratio:1; left:-3px; bottom:11px;
+  display:block; padding:0; border:0; border-radius:50%;
+  background:transparent; cursor:pointer; isolation:isolate;
+  transform:rotate(-9deg);
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),filter .3s ease;
+}
+.mascot-sticker > img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:contain;
+  transition:opacity .28s ease,transform .3s cubic-bezier(.2,.8,.2,1);
+}
+.mascot-sticker .mascot-finished{opacity:1}
+.mascot-sticker .mascot-sketch{opacity:0;transform:scale(.97)}
+.mascot-sticker:is(:hover,:focus-visible,[aria-pressed="true"]){
+  transform:rotate(-4deg) scale(1.055);
+  filter:drop-shadow(0 15px 20px rgba(91,60,113,.19));
+}
+.mascot-sticker:is(:hover,:focus-visible,[aria-pressed="true"]) .mascot-finished{opacity:0;transform:scale(.97)}
+.mascot-sticker:is(:hover,:focus-visible,[aria-pressed="true"]) .mascot-sketch{opacity:1;transform:scale(1)}
+.mascot-sticker:focus-visible{outline:3px solid #8656aa;outline-offset:5px}
+.mascot-hint{
+  position:absolute;bottom:-12px;left:50%;white-space:nowrap;
+  transform:translate(-50%,7px);opacity:0;pointer-events:none;
+  background:#fffafd;border:1px solid #dfc5e6;border-radius:999px;
+  box-shadow:0 7px 16px rgba(88,61,112,.13);color:#79528e;
+  padding:6px 11px;font-size:11px;font-weight:700;
+  line-height:1.2;letter-spacing:.015em;transition:opacity .25s ease,transform .25s ease;
+}
+.mascot-sticker:is(:hover,:focus-visible,[aria-pressed="true"]) .mascot-hint{opacity:1;transform:translate(-50%,0)}
+@media(max-width:620px){
+ .mascot-sticker{width:198px;left:10px;bottom:23px}
+ .mascot-hint{font-size:10px;bottom:-10px}
+}
+@media(prefers-reduced-motion:reduce){
+ .mascot-sticker,.mascot-sticker > img,.mascot-hint{transition:none}
+}
