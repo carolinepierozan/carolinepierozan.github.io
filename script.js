@@ -114,6 +114,25 @@
     } else $$('.reveal').forEach(el=>el.classList.add('in-view'));
 
     $('#langSwitch').addEventListener('click',()=>setLanguage(lang === 'en' ? 'pt' : 'en'));
+
+    // Mouse hover reveals the first sketch; tapping toggles it on touchscreens.
+    const mascotButton = document.querySelector('.mascot-sticker');
+    if (mascotButton) {
+      mascotButton.addEventListener('click', () => {
+        const showingSketch = mascotButton.getAttribute('aria-pressed') !== 'true';
+        mascotButton.setAttribute('aria-pressed', String(showingSketch));
+        mascotButton.setAttribute('aria-label', showingSketch
+          ? 'Show the finished designer cat logo'
+          : 'See Caroline’s original hand-drawn designer cat sketch');
+      });
+      mascotButton.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && mascotButton.getAttribute('aria-pressed') === 'true') {
+          mascotButton.setAttribute('aria-pressed', 'false');
+          mascotButton.setAttribute('aria-label', 'See Caroline’s original hand-drawn designer cat sketch');
+        }
+      });
+    }
+
     $$('.filter-chip').forEach(button => button.addEventListener('click', () => {
       activeFilter = button.dataset.filter;
       $$('.filter-chip').forEach(chip => {const active = chip === button;chip.classList.toggle('active',active);chip.setAttribute('aria-pressed',String(active));});
