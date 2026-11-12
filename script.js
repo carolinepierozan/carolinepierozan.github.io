@@ -118,14 +118,31 @@
     // Mouse hover reveals the first sketch; tapping toggles it on touchscreens.
     const mascotButton = document.querySelector('.mascot-sticker');
     if (mascotButton) {
+      const playMascotMagic = () => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        mascotButton.classList.remove('mascot-magic-burst');
+        // Restart the short sparkle animation each time the user discovers the logo.
+        void mascotButton.offsetWidth;
+        mascotButton.classList.add('mascot-magic-burst');
+      };
+      mascotButton.addEventListener('pointerenter', event => {
+        if (event.pointerType === 'mouse' || event.pointerType === 'pen') playMascotMagic();
+      });
+      mascotButton.addEventListener('pointerleave', () => {
+        mascotButton.classList.remove('mascot-magic-burst');
+      });
+      mascotButton.addEventListener('focus', playMascotMagic);
       mascotButton.addEventListener('click', () => {
         // Desktop reveals it only while hovered or keyboard-focused; tap toggles it on touchscreens.
         if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
           mascotButton.setAttribute('aria-pressed', 'false');
+          playMascotMagic();
           return;
         }
         const showingSketch = mascotButton.getAttribute('aria-pressed') !== 'true';
         mascotButton.setAttribute('aria-pressed', String(showingSketch));
+        if (showingSketch) playMascotMagic();
+        else mascotButton.classList.remove('mascot-magic-burst');
         mascotButton.setAttribute('aria-label', showingSketch
           ? 'Show the finished designer cat logo'
           : 'See Caroline’s original hand-drawn designer cat sketch');
@@ -133,12 +150,14 @@
       document.addEventListener('pointerdown', event => {
         if (!mascotButton.contains(event.target)) {
           mascotButton.setAttribute('aria-pressed', 'false');
+          mascotButton.classList.remove('mascot-magic-burst');
           mascotButton.setAttribute('aria-label', 'See Caroline’s original hand-drawn designer cat sketch');
         }
       });
       mascotButton.addEventListener('keydown', event => {
         if (event.key === 'Escape' && mascotButton.getAttribute('aria-pressed') === 'true') {
           mascotButton.setAttribute('aria-pressed', 'false');
+          mascotButton.classList.remove('mascot-magic-burst');
           mascotButton.setAttribute('aria-label', 'See Caroline’s original hand-drawn designer cat sketch');
         }
       });
