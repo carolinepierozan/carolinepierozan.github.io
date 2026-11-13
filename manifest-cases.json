@@ -1,5 +1,25 @@
 [
   {
+    "id": "hendow-demonstrativos",
+    "title": "Financial statements: clarity for analysis and formula building",
+    "label": "Hendow · Aliare",
+    "short": "Hendow · Financial Statements",
+    "tags": [
+      "Product Design",
+      "B2B SaaS",
+      "Complex Tables",
+      "Information Architecture",
+      "Interaction Design",
+      "UX Writing"
+    ],
+    "type": [
+      "product"
+    ],
+    "cover": "../media/hendow/table.png",
+    "image_count": 11,
+    "source": "Figma · Demonstrativos Contábeis (N2)"
+  },
+  {
     "id": "agent-accessibility",
     "title": "Platform Redesign for Accessibility & Usability — Agent",
     "label": "Zenvia · Agent platform",
