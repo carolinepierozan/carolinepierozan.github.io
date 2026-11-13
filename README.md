@@ -1,6 +1,6 @@
 # Caroline Pierozan — Personal portfolio
 
-Pastel-themed static portfolio site; 10 full case study pages imported from the user-supplied Notion HTML export (12 November 2026).
+Pastel-themed static portfolio site; 7 full case study pages imported from the user-supplied Notion HTML export (12 November 2026).
 
 ## Structure
 - `index.html`, `styles.css`, `script.js`, `content.js`: homepage
@@ -15,7 +15,6 @@ Pastel-themed static portfolio site; 10 full case study pages imported from the 
 - Intro summaries and labels were edited for clarity.
 - The homepage has Portuguese and English summaries; the detailed original case text remains in English.
 - Some case images can include company/product materials. Review their suitability for a public site before sharing.
-- The Pharmacy App case uses a contextual stock cover, not a product screenshot.
 
 ## Hosting
 This root repo is configured for GitHub Pages from the `main` branch and root folder.
