@@ -41,8 +41,12 @@
       const content = project[lang];
       const num = String(projects.indexOf(project) + 1).padStart(2, '0');
       const tags = project.tags.slice(0, 3).map(tag => `<span class="tag">${esc(tag)}</span>`).join('');
+      const professionalProjectIds = ['agent-accessibility', 'admin-dashboard', 'ai-productivity', 'product-analytics', 'wms-port', 'allfly-checkout'];
+      const coverLabel = professionalProjectIds.includes(project.id)
+        ? (lang === 'pt' ? 'projeto profissional' : 'professional project')
+        : 'original project work';
       const visual = project.cover
-        ? `<div class="project-cover cover-real cover-real-${esc(project.id)}"><span class="cover-floating-label">original project work ✿</span><img src="${esc(project.cover)}" loading="lazy" decoding="async" alt="${esc(content.title)} — original project image"></div>`
+        ? `<div class="project-cover cover-real cover-real-${esc(project.id)}"><span class="cover-floating-label">${esc(coverLabel)} ✿</span><img src="${esc(project.cover)}" loading="lazy" decoding="async" alt="${esc(content.title)} — original project image"></div>`
         : cover(project.visual);
       return `<article class="project-card reveal"><a class="project-open" href="cases/${esc(project.id)}/" aria-label="${esc(t('projectExplore'))}: ${esc(content.title)}">${visual}<div class="card-bottom"><span class="card-index">${num} / ${String(projects.length).padStart(2,'0')}</span><h3 class="card-title">${esc(content.title)}</h3><p class="card-summary">${esc(content.summary)}</p><div class="card-footer"><div class="card-tags">${tags}</div><span class="card-arrow" aria-hidden="true">↗</span></div></div></a></article>`;
     }).join('');
