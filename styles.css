@@ -130,3 +130,35 @@
     opacity:.7;transform:none
   }
 }
+
+
+/* Experimental bubble-lettering display accents — reversible typography test. */
+:root{--bubble-display:'Bagel Fat One','DynaPuff',cursive}
+/* Use this playful retro lettering only for short expressive highlights. */
+.hero h1 .magic-word{
+  font-family:var(--bubble-display);
+  font-weight:400;
+  font-style:normal;
+  font-size:.88em;
+  letter-spacing:-.035em;
+  line-height:1.15;
+  color:#b27bcd;
+  text-shadow:1px 2px 0 #f5cbe2;
+  display:inline-block;
+}
+#work-title em,
+#contact-title em{
+  font-family:var(--bubble-display);
+  font-weight:400;
+  font-style:normal;
+  font-size:.86em;
+  letter-spacing:-.026em;
+  line-height:1.2;
+  color:#d98bb5;
+  text-shadow:1px 2px 0 rgba(255,222,239,.83);
+}
+#contact-title em{color:#9875c8}
+@media(max-width:620px){
+  .hero h1 .magic-word{font-size:.84em;letter-spacing:-.045em}
+  #work-title em,#contact-title em{font-size:.82em;letter-spacing:-.038em}
+}
