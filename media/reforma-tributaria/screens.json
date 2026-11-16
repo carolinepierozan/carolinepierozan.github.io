@@ -1,0 +1,402 @@
+[
+  {
+    "id": "593:34346",
+    "name": "02.02 Visão Geral - Visão tabela",
+    "w": 1366,
+    "h": 1411,
+    "width": 1366,
+    "height": 1411,
+    "file": "593-34346.webp",
+    "redactions": 2
+  },
+  {
+    "id": "594:11059",
+    "name": "02.03 Visão Geral - Visão gráfico de linha",
+    "w": 1366,
+    "h": 1081,
+    "width": 1366,
+    "height": 1081,
+    "file": "594-11059.webp",
+    "redactions": 2
+  },
+  {
+    "id": "594:13388",
+    "name": "02.03 Visão Geral - Visão gráfico de barra",
+    "w": 1366,
+    "h": 1081,
+    "width": 1366,
+    "height": 1081,
+    "file": "594-13388.webp",
+    "redactions": 2
+  },
+  {
+    "id": "593:35078",
+    "name": "02.01 Visão Geral - Empty State",
+    "w": 1366,
+    "h": 1170,
+    "width": 1366,
+    "height": 1170,
+    "file": "593-35078.webp",
+    "redactions": 2
+  },
+  {
+    "id": "589:78966",
+    "name": "03.06 Lista de Arquivos - Detalhes - Gráfico de linhas",
+    "w": 1368,
+    "h": 1205,
+    "width": 1368,
+    "height": 1205,
+    "file": "589-78966.webp",
+    "redactions": 7
+  },
+  {
+    "id": "589:79343",
+    "name": "03.07 Lista de Arquivos - Detalhes - Gráfico de barras",
+    "w": 1368,
+    "h": 1205,
+    "width": 1368,
+    "height": 1205,
+    "file": "589-79343.webp",
+    "redactions": 7
+  },
+  {
+    "id": "589:84405",
+    "name": "03.04 Lista de Arquivos - Detalhes - Exemplo sem PIS e COFINS",
+    "w": 1368,
+    "h": 1522,
+    "width": 1368,
+    "height": 1522,
+    "file": "589-84405.webp",
+    "redactions": 7
+  },
+  {
+    "id": "591:106206",
+    "name": "03.08 Lista de Arquivos - Detalhes - Por produto - Produto Colapsado",
+    "w": 1368,
+    "h": 806,
+    "width": 1368,
+    "height": 806,
+    "file": "591-106206.webp",
+    "redactions": 7
+  },
+  {
+    "id": "591:107175",
+    "name": "03.09 Lista de Arquivos - Detalhes - Por produto - Produto Aberto",
+    "w": 1368,
+    "h": 1587,
+    "width": 1368,
+    "height": 1587,
+    "file": "591-107175.webp",
+    "redactions": 7
+  },
+  {
+    "id": "591:107872",
+    "name": "03.10 Lista de Arquivos - Detalhes - Por produto - Exemplo vários produtos",
+    "w": 1368,
+    "h": 3418,
+    "width": 1368,
+    "height": 3418,
+    "file": "591-107872.webp",
+    "redactions": 7
+  },
+  {
+    "id": "591:99928",
+    "name": "03.05 Lista de Arquivos - Detalhes - Dropdown open",
+    "w": 1368,
+    "h": 1522,
+    "width": 1368,
+    "height": 1522,
+    "file": "591-99928.webp",
+    "redactions": 7
+  },
+  {
+    "id": "591:98566",
+    "name": "03.03 Lista de Arquivos - Detalhes - Exemplo com PIS e COFINS",
+    "w": 1368,
+    "h": 1522,
+    "width": 1368,
+    "height": 1522,
+    "file": "591-98566.webp",
+    "redactions": 7
+  },
+  {
+    "id": "591:100683",
+    "name": "03.02 Lista de Arquivos - Completo",
+    "w": 1368,
+    "h": 1072,
+    "width": 1368,
+    "height": 1072,
+    "file": "591-100683.webp",
+    "redactions": 18
+  },
+  {
+    "id": "593:13394",
+    "name": "03.18 Lista de Arquivos - Modal excluir arquivos em lote",
+    "w": 1368,
+    "h": 763,
+    "width": 1368,
+    "height": 763,
+    "file": "593-13394.webp",
+    "redactions": 12
+  },
+  {
+    "id": "593:12510",
+    "name": "03.17 Lista de Arquivos - Selecionar vários para excluir",
+    "w": 1368,
+    "h": 1026,
+    "width": 1368,
+    "height": 1026,
+    "file": "593-12510.webp",
+    "redactions": 18
+  },
+  {
+    "id": "634:53965",
+    "name": "03.19 Lista de Arquivos - Excluir em lote - toast de sucesso",
+    "w": 1368,
+    "h": 763,
+    "width": 1368,
+    "height": 763,
+    "file": "634-53965.webp",
+    "redactions": 8
+  },
+  {
+    "id": "634:54821",
+    "name": "03.19 Lista de Arquivos - Excluir em lote - toast de erro",
+    "w": 1368,
+    "h": 763,
+    "width": 1368,
+    "height": 763,
+    "file": "634-54821.webp",
+    "redactions": 8
+  },
+  {
+    "id": "593:9929",
+    "name": "03.14 Lista de Arquivos - Modal excluir arquivo fiscal",
+    "w": 1368,
+    "h": 763,
+    "width": 1368,
+    "height": 763,
+    "file": "593-9929.webp",
+    "redactions": 12
+  },
+  {
+    "id": "634:55693",
+    "name": "03.15 Lista de Arquivos - Excluir arquivo fiscal - toast sucesso",
+    "w": 1368,
+    "h": 763,
+    "width": 1368,
+    "height": 763,
+    "file": "634-55693.webp",
+    "redactions": 8
+  },
+  {
+    "id": "634:56229",
+    "name": "03.16 Lista de Arquivos - Excluir arquivo fiscal - toast erro",
+    "w": 1368,
+    "h": 763,
+    "width": 1368,
+    "height": 763,
+    "file": "634-56229.webp",
+    "redactions": 8
+  },
+  {
+    "id": "289:16860",
+    "name": "03.01 Lista de Arquivos - Empty State",
+    "w": 1366,
+    "h": 1134,
+    "width": 1366,
+    "height": 1134,
+    "file": "289-16860.webp",
+    "redactions": 2
+  },
+  {
+    "id": "640:43884",
+    "name": "01.01 Painel de Análises - Empty state",
+    "w": 1368,
+    "h": 2351,
+    "width": 1368,
+    "height": 2351,
+    "file": "640-43884.webp",
+    "redactions": 2
+  },
+  {
+    "id": "686:18850",
+    "name": "01.08 Painel de Análises - Completo",
+    "w": 1368,
+    "h": 2598,
+    "width": 1368,
+    "height": 2598,
+    "file": "686-18850.webp",
+    "redactions": 2
+  },
+  {
+    "id": "686:12023",
+    "name": "01.09 Painel de Análises - Completo - Dropdowns abertos",
+    "w": 1368,
+    "h": 2598,
+    "width": 1368,
+    "height": 2598,
+    "file": "686-12023.webp",
+    "redactions": 8
+  },
+  {
+    "id": "686:13000",
+    "name": "01.02 Modal Importar",
+    "w": 1368,
+    "h": 768,
+    "width": 1368,
+    "height": 768,
+    "file": "686-13000.webp",
+    "redactions": 3
+  },
+  {
+    "id": "686:13573",
+    "name": "01.03 Modal Importar - Selecionar Arquivo",
+    "w": 1368,
+    "h": 768,
+    "width": 1368,
+    "height": 768,
+    "file": "686-13573.webp",
+    "redactions": 5
+  },
+  {
+    "id": "686:14227",
+    "name": "01.04 Modal Importar - Arquivo baixado",
+    "w": 1368,
+    "h": 768,
+    "width": 1368,
+    "height": 768,
+    "file": "686-14227.webp",
+    "redactions": 4
+  },
+  {
+    "id": "686:14888",
+    "name": "01.06 Modal Importar - Exemplo vários arquivos",
+    "w": 1368,
+    "h": 768,
+    "width": 1368,
+    "height": 768,
+    "file": "686-14888.webp",
+    "redactions": 7
+  },
+  {
+    "id": "686:15548",
+    "name": "01.05 Modal Importar - Erro tamanho",
+    "w": 1368,
+    "h": 768,
+    "width": 1368,
+    "height": 768,
+    "file": "686-15548.webp",
+    "redactions": 5
+  },
+  {
+    "id": "686:17893",
+    "name": "01.07 Importar - Toast Sucesso",
+    "w": 1368,
+    "h": 768,
+    "width": 1368,
+    "height": 768,
+    "file": "686-17893.webp",
+    "redactions": 2
+  },
+  {
+    "id": "591:102670",
+    "name": "gráfico linha detalhe ao passar o mouse - linha ano",
+    "w": 1052,
+    "h": 344,
+    "width": 1052,
+    "height": 344,
+    "file": "591-102670.webp",
+    "redactions": 0
+  },
+  {
+    "id": "589:76698",
+    "name": "gráfico linha detalhe ao passar o mouse - linha tributo",
+    "w": 1052,
+    "h": 344,
+    "width": 1052,
+    "height": 344,
+    "file": "589-76698.webp",
+    "redactions": 0
+  },
+  {
+    "id": "591:102927",
+    "name": "exemplo de gráfico de linhas completo",
+    "w": 1052,
+    "h": 344,
+    "width": 1052,
+    "height": 344,
+    "file": "591-102927.webp",
+    "redactions": 0
+  },
+  {
+    "id": "591:103115",
+    "name": "exemplo de gráfico de barras completo",
+    "w": 1052,
+    "h": 344,
+    "width": 1052,
+    "height": 720,
+    "file": "591-103115.webp",
+    "redactions": 0
+  },
+  {
+    "id": "591:111820",
+    "name": "Informação Adicional",
+    "w": 328,
+    "h": 727,
+    "width": 328,
+    "height": 727,
+    "file": "591-111820.webp",
+    "redactions": 0
+  },
+  {
+    "id": "593:17214",
+    "name": "tabela-destaque-linha",
+    "w": 1052,
+    "h": 420,
+    "width": 1052,
+    "height": 420,
+    "file": "593-17214.webp",
+    "redactions": 0
+  },
+  {
+    "id": "593:16461",
+    "name": "tabela-destaque-coluna",
+    "w": 1052,
+    "h": 420,
+    "width": 1052,
+    "height": 420,
+    "file": "593-16461.webp",
+    "redactions": 0
+  },
+  {
+    "id": "589:80092",
+    "name": "03.11 Lista de Arquivos - Detalhes - Exportar - Carregando",
+    "w": 1368,
+    "h": 767,
+    "width": 1368,
+    "height": 767,
+    "file": "589-80092.webp",
+    "redactions": 7
+  },
+  {
+    "id": "591:111875",
+    "name": "03.12 Lista de Arquivos - Detalhes - Exportar - Toast Sucesso",
+    "w": 1368,
+    "h": 767,
+    "width": 1368,
+    "height": 767,
+    "file": "591-111875.webp",
+    "redactions": 7
+  },
+  {
+    "id": "591:120901",
+    "name": "03.13 Lista de Arquivos - Detalhes - Exportar - Toast Erro",
+    "w": 1368,
+    "h": 767,
+    "width": 1368,
+    "height": 767,
+    "file": "591-120901.webp",
+    "redactions": 7
+  }
+]

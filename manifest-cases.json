@@ -1,5 +1,24 @@
 [
   {
+    "id": "simulador-reforma-tributaria",
+    "title": "Simulador da Reforma Tributária",
+    "short": "Hendow · Tax Reform Simulator",
+    "label": "Hendow · Aliare",
+    "tags": [
+      "Product Design",
+      "B2B SaaS",
+      "Data Visualization",
+      "Interaction Design",
+      "UX Research"
+    ],
+    "type": [
+      "product",
+      "research"
+    ],
+    "cover": "../media/reforma-tributaria/cover.webp",
+    "image_count": 40
+  },
+  {
     "id": "hendow-demonstrativos",
     "title": "Financial statements: clarity for analysis and formula building",
     "label": "Hendow · Aliare",

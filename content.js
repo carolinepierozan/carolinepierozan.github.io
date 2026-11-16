@@ -124,6 +124,30 @@ window.PORTFOLIO_TEXT = {
 
 window.PORTFOLIO_PROJECTS = [
   {
+    "id": "simulador-reforma-tributaria",
+    "visual": "finance",
+    "cover": "media/reforma-tributaria/cover.webp",
+    "type": [
+      "product",
+      "research"
+    ],
+    "tags": [
+      "Product Design",
+      "B2B SaaS",
+      "Data Visualization"
+    ],
+    "pt": {
+      "title": "Hendow · Simulador da Reforma Tributária",
+      "summary": "Dos documentos fiscais à comparação de cenários: design de uma experiência de simulação, análise e detalhamento por produto.",
+      "subtitle": "Simulação tributária, visualização de dados e testes de usabilidade"
+    },
+    "en": {
+      "title": "Hendow · Tax Reform Simulator",
+      "summary": "From fiscal documents to scenario comparisons: designing simulation, analysis and product-level investigation.",
+      "subtitle": "Tax simulation, data visualization and usability testing"
+    }
+  },
+  {
     "id": "hendow-demonstrativos",
     "visual": "finance",
     "cover": "media/hendow/table.png",
