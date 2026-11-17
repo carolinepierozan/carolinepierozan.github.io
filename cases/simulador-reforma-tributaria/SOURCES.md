@@ -1,13 +1,11 @@
-# Sources and publication notes
+# Fontes e notas do meu case
 
-- Figma file: UmgmXKnxSgicv7sV3r04oO.
-- UI scope: Desktop 1366x768, page 107:10922 only. 40 native Figma exports include 33 numbered screens and seven interaction details. The introduction at 2285:12258 supplied context and audiences.
-- Additional scope explicitly authorized by the designer: Research Plan & Script, page 214:26755. Other research, analysis and obsolete prototype pages were not inspected.
-- The designer confirmed screen authorship and a planned 2027 release. This is a forecast, not evidence of a shipped product.
-- The designer reports user testing. The reviewed plan contains tasks, hypotheses and target metrics but no observed participant data. Sample size remains unspecified. Target scores must not be presented as achieved outcomes.
-- Screenshots contain prototype tax rates and sample values, not verified legal guidance or product-success metrics. Fiscal content requires specialist review before launch.
-- Native exports were saved locally, identifying headers, company selectors, document identifiers, names and filenames were covered with opaque masks, and browser chrome was cropped. No raw source exports or research participant data are included in the site. Financial examples and product labels remain as design context; synthetic provenance cannot be established from this file alone.
-- Image inventory: ../../media/reforma-tributaria/screens.json. Node identifiers make the image set traceable to the source file. The cover composes two redacted exports against the portfolio's pastel palette.
-- Open implementation checks: accessible graph alternatives, focus behavior, live feedback, tooltip keyboard access, measured contrast, and alignment of XML/SPED import requirements.
+Apresento minhas telas da página Desktop 1366x768 (107:10922) do arquivo Figma UmgmXKnxSgicv7sV3r04oO. Consultei também o Plano de Pesquisa & Roteiro (214:26755). Mantive as demais páginas fora deste case.
 
-Prepared 16 November 2026. PT/EN case with responsive layout and expandable image galleries.
+Fui responsável pelo design das telas. O lançamento está previsto para 2027. Apliquei testes com usuários; compartilho o plano e o roteiro, mas ainda preciso consolidar a amostra e os registros dos resultados. As metas do plano não são apresentadas como resultados alcançados.
+
+Todos os dados exibidos nas telas são fictícios, conforme confirmei em 17/11/2026. Pedi que apenas os CNPJs fossem ocultados e que os demais dados permanecessem visíveis. As 40 imagens foram regeneradas a partir das exportações originais, com máscaras opacas limitadas aos trechos de CNPJ. Mantive a capa com uma única tela. Os números do protótipo não são métricas de sucesso nem orientação tributária atual.
+
+O inventário está em ../../media/reforma-tributaria/screens.json. Cada imagem pode ser rastreada pelo identificador de seu nó no Figma. O conteúdo fiscal precisa de revisão especializada antes do lançamento. Ainda preciso validar comportamento de foco, leitura assistiva, contraste e requisitos de importação na implementação.
+
+Case PT/EN atualizado em 17/11/2026.

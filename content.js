@@ -126,7 +126,7 @@ window.PORTFOLIO_PROJECTS = [
   {
     "id": "simulador-reforma-tributaria",
     "visual": "finance",
-    "cover": "media/reforma-tributaria/cover.webp",
+    "cover": "media/reforma-tributaria/cover.webp?v=20261117-cnpj",
     "type": [
       "product",
       "research"
